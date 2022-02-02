@@ -1,0 +1,17 @@
+h1{
+    max-width: 1400px;
+    width:100%;
+}
+.plm {
+    background:#f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    max-width:1400px;
+}

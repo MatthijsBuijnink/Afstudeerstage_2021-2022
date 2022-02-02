@@ -1,0 +1,27 @@
+.sidebar {
+    background: #ffffff;
+    margin-left:50px;
+    border-radius: 5px;
+    margin-bottom:100px;
+    padding: 20px;
+    width: 350px;
+}
+
+.modelCardImage{
+    display: block;
+    margin:10px auto;
+}
+
+.modelContentSidebarWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    padding:10px;
+    margin:0 10px 0 0;
+    border-radius: 5px;
+}
+.section:hover{
+    background:#f3f3f3;
+    cursor: pointer;
+}
