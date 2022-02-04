@@ -1,0 +1,17 @@
+<h2>{{@title}}</h2>
+
+ <ul>
+
+   {{#each @options as |option|}}
+     <li>
+       <input name="leaseLength" id={{option.id}} type="radio" {{on "click" (fn this.selectLeaseLength option)}}/>
+
+      <label for={{option.id}} >{{option.months}} {{@label}}</label>
+     </li>
+   {{/each}}
+
+ </ul>
+
+<Sidebar @leaseLength = {{this.selectedLeaseLength}}/>
+
+
