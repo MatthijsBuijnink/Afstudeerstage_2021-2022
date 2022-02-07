@@ -37,14 +37,12 @@ class LeaseLength extends React.Component{
         this.state = {
             leaseLengths : null
         };
+
+        this.fetchLeaseLenghtsAPI();
     }
 
-    componentDidMount() {
-        this.callLeaseLenghtsAPI();
-    }
-
-    callLeaseLenghtsAPI(){
-        fetch('https://plm.dtcmedia.dev/api/trims/2/lease-lengths')
+    async fetchLeaseLenghtsAPI(){
+        await fetch('https://plm.dtcmedia.dev/api/trims/2/lease-lengths')
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({ leaseLengths : responseJson })
